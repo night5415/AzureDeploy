@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>{{title}}</title>
+    <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+<body>
+{{> nav}} 
+<div class="container">
+<div id="main-content" class="starter-template"> 
+{{{body}}} 
+</div>
+</div>
+{{#isProduction}}
+    <script src="javascript/main-built.js" data-main="javascript/main"></script>
+{{/isProduction}}
+{{^isProduction}}
+    <script src="javascript/lib/require.js" data-main="javascript/main"></script>
+{{/isProduction}}
+</body>
+</html>

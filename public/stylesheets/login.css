@@ -1,0 +1,27 @@
+﻿
+body {
+    height: 100vh;
+    width: 100vw;  
+    box-shadow: #000 0 0 420px inset; 
+    margin:0;
+    padding:0;
+}
+
+form {
+    margin-top: 30vh;
+}
+.background {
+    -moz-filter: blur(3px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    height:100vh; 
+    width:100vw;
+    z-index:-1;
+    position:fixed;
+    top:0;
+    left:0;
+    background: url("../images/GreenWood_1080.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color:#3da297;
+}
